@@ -8,8 +8,8 @@ Modified SimpleModbusSlave and SimpleModbusMaster were used
 ____________                  ____________
 |           |                 |           |
 |           |                 |           |
-|   UNO  D11| ----- RS485 ----| 1  LEO    | 
-|        D10| ----- RS485 ----| 0         |
+|   UNO  D0 | ----- RS485 ----| 1  LEO    | 
+|        D1 | ----- RS485 ----| 0         |
 |           |                 |           |          
 |           |                 |           |          
 |           |                 |           |          
