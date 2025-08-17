@@ -1,6 +1,6 @@
 # Midi Plus Modbus
 
-Testing possibility of using multiple Arduino UNOs connected over RS485 to a single Arduino Leonardo that acts as a USBB MIDI device. UNOs use SoftwareSerial at early stages of prototyping. When everything works as expected this will be changed to HardwareSerial, probably will need to unsolder the UART-USB chip...
+Testing possibility of using multiple Arduino UNOs connected over RS485 to a single Arduino Leonardo that acts as a USB MIDI device. UNOs use SoftwareSerial at early stages of prototyping. When everything works as expected this will be changed to HardwareSerial, probably will need to unsolder the UART-USB chip...
 
 Modified SimpleModbusSlave and SimpleModbusMaster were used
 

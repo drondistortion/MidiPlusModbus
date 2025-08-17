@@ -6,9 +6,9 @@
 // modbus
 #define connection_error_led LED_BUILTIN
 
-#define baud 38400
+#define baud 1000000
 #define timeout 1000
-#define polling 10 // the scan rate
+#define polling 5 // the scan rate
 
 #define retry_count 10
 

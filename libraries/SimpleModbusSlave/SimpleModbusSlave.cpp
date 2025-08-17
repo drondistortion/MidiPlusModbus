@@ -1,12 +1,16 @@
-// original https://github.com/angeloc/simplemodbusng
 #include "SimpleModbusSlave.h"
 
+#if 0
 #define M_RX 10
 #define M_TX 11
-#define BUFFER_SIZE 128
 
 #include <SoftwareSerial.h>
 SoftwareSerial MB_SERIAL(M_RX, M_TX);
+#else
+#define MB_SERIAL Serial
+#endif
+
+#define BUFFER_SIZE 128
 
 
 // frame[] is used to recieve and transmit packages.

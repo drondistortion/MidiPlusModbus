@@ -1,10 +1,11 @@
-#define MB_SERIAL mySerial
 #include <SimpleModbusSlave.h>
 
 #define  ledPin  13 // onboard led 
 #define  buttonPin1  8 // push button
 #define  buttonPin2  6 // push button
 #define  buttonPin3  4 // push button
+
+#define BAUD 1000000
 
 #define BD_BUTTON_PIN 8 //PB4
 #define SN_BUTTON_PIN 4 //PD4 
@@ -74,8 +75,8 @@ unsigned int holdingRegs[TOTAL_REGS_SIZE]; // function 3 and 16 register array
 
 void setup()
 {
-	Serial.begin(9600);
-	Serial.println("Start!");
+	//Serial.begin(9600);
+	//Serial.println("Start!");
     /* parameters(long baudrate,
                   unsigned char ID,
                   unsigned char transmit enable pin,
@@ -88,7 +89,7 @@ void setup()
        but practically it works with all major modbus master implementations.
     */
 
-    modbus_configure(38400, 1, 2, TOTAL_REGS_SIZE, 0);
+    modbus_configure(BAUD, 1, 2, TOTAL_REGS_SIZE, 0);
     pinMode(ledPin, OUTPUT);
     pinMode(buttonPin1, INPUT);
     pinMode(buttonPin2, INPUT);
